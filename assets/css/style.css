@@ -55,6 +55,9 @@ a{
     color: #ffffff;
     cursor: pointer;
 }
+ul{
+    text-align: center;
+}
 
 ul li{
     display: inline-block;
@@ -180,6 +183,7 @@ footer{
 #projectsTemplate{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+grid-gap:1rem;
 }
 
 #projectsTemplate img{
@@ -193,7 +197,7 @@ height: auto;
 .projectName{
     position: absolute;
     background-color:rgba(255,255,255,0.7);
-    width: 80%;
+    width: 40%;
     padding:10px;
     text-align: left;
     top:60%;
@@ -203,7 +207,7 @@ height: auto;
 }
 
 .longPic{
-    grid-row:1/3;
+    grid-row:auto;
 }
 
 /*********Contact form***********/
@@ -234,4 +238,13 @@ input, textarea {
       border-radius: 3px;
       text-align: center;
       cursor: pointer;
+  }
+
+  @media (min-width: 900px) {
+    .longPic{
+        grid-row:1/3;
+    }
+    .projectName{
+        width: 80%;
+    }
   }
