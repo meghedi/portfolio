@@ -45,6 +45,14 @@ $('body').on('click', function (e) {
     }
 });
 
+$('.project').on('mouseover', function () {
+  $(this).find('.projectName').eq(0).css({"background-color": "transparent"});
+});
+
+$('.project').on('mouseout', function () {
+    $(this).find('.projectName').eq(0).css("background-color", "rgba(1,1,1,0.5)");
+  });
+
 function resetLabel() {
     $('.form-group label').css({ 'top': '6px', 'font-size': '14px' });
 }
