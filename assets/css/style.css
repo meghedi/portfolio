@@ -28,11 +28,13 @@ html{
 header{
     margin-top: 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: flex-end;
     flex-wrap: wrap;
-    height: 73px;
+    height: 100px;
     padding-bottom: 20px;
+    text-align: center;
+  
 }
 h1{
     font-size: 25px;
@@ -184,6 +186,7 @@ footer{
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 grid-gap:1rem;
+text-align: center;
 }
 
 #projectsTemplate img{
@@ -200,7 +203,7 @@ border:4px solid #ccc;
     background-color:rgba(1,1,1,0.5);
     width: 95%;
     padding:10px;
-    text-align: left;
+    text-align: center;
     top:0;
     font-size: 14px;
     letter-spacing: 2px;
@@ -246,4 +249,18 @@ input, textarea {
       border-radius: 3px;
       text-align: center;
       cursor: pointer;
+  }
+
+
+  @media (min-width: 600px){
+      header{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 73px;
+    padding-bottom: 20px;
+    text-align: left;
+      }
   }
