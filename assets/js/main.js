@@ -46,7 +46,7 @@ $('body').on('click', function (e) {
 });
 
 $('.project').on('mouseover', function () {
-  $(this).find('.projectName').eq(0).css({"background-color": "transparent"});
+  $(this).find('.projectName').eq(0).css({"background-color": "rgba(1,1,1,0.8)", "transition": "2s linear background-color"});
 });
 
 $('.project').on('mouseout', function () {
